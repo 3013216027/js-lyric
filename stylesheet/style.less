@@ -1,0 +1,49 @@
+@background-color: rgba(31, 36, 50, 0.3);
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main {
+  background-color: @background-color;
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#lrc-box {
+  position: absolute;
+  //background-color: @background-color;
+  top: 5%;
+  right: 15%;
+  left: 15%;
+  bottom: 8%;
+  //height: 50%;
+}
+
+#lrc-box p {
+  text-align: center;
+}
+
+.main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(31,36,50,.95);
+}
+
+.lyrics {
+  display: none;
+}
+
+#music-box {
+  display: none;
+}
